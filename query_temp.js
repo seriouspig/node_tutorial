@@ -1,0 +1,1 @@
+SELECT id FROM bb_jtrip_trips WHERE REPLACE(REPLACE(tail, '-', ''), ' ', '') = REPLACE(REPLACE('AB4215', '-', ''), ' ', '') AND date_from < (NOW() + INTERVAL 1 HOUR) AND date_to > (NOW() - INTERVAL 1 HOUR);
